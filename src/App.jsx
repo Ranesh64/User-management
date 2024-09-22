@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-import { UserProvider } from "@/utils/userContext";
+import { UserProvider } from "@/utils/UserContext";
 import { Toaster } from "@/components/ui/toaster";
 
 const Header = () => {

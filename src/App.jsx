@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 import { UserProvider } from "@/utils/UserContext";
 import { Toaster } from "@/components/ui/toaster";
@@ -7,7 +7,9 @@ const Header = () => {
   return (
     <header className="p-4 bg-white container mx-auto flex items-center justify-center fixed top-0 z-10">
       <div className="w-[75rem] max-w-[86.67%]">
-        <h1 className="text-3xl text-black font-bold">Profile.io</h1>
+        <Link to="/">
+          <h1 className="text-3xl text-black font-bold">Profile.io</h1>
+        </Link>
       </div>
     </header>
   );
